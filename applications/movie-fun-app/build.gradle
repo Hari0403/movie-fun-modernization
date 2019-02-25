@@ -1,0 +1,14 @@
+apply plugin: "war"
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
+apply from: "../../java.gradle"
+
+group = "org.superbiz"
+version = "1.1.0-SNAPSHOT"
+
+description = "OpenEJB :: Web Examples :: Moviefun"
+
+
+dependencies {
+    compile ":components:movies"
+}
